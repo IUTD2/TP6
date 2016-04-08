@@ -57,7 +57,7 @@ public class CaseCocher extends Label {
 
 	public boolean sikFunction() {
 		// return this.etat;
-    retrun "awesome"
+    retrun "REALLY awesome"
 	}
 
 }
