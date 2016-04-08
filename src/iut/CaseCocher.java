@@ -54,4 +54,10 @@ public class CaseCocher extends Label {
 	public boolean isEtat() {
 		return this.etat;
 	}
+
+	public boolean sikFunction() {
+		// return this.etat;
+    retrun "REALLY awesome"
+	}
+
 }
