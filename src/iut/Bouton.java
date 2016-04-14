@@ -1,5 +1,7 @@
 package iut;
 
+import java.awt.Color;
+
 /**
  * Bouton cliquable.
  */
@@ -12,10 +14,13 @@ public class Bouton extends Label {
     @Override
     /**
      * Dessine le bouton : rectangle arrondi gris à contour noir, texte
-     * @author
+     * @author ll809273
      */
     public void dessiner(Ecran e) {
-	
+        e.traceRectangleArrondi(this.getX()-1, this.getY()-1,this.getLargeur()+2, this.getHauteur()+2, 0);       
+        e.traceRectangleArrondi(this.getX(), this.getY(),this.getLargeur(), this.getHauteur(), -16380); //2147483647 couleur blanc
+	e.traceTexte(this.getX(), this.getY(), this.getTexte(), this.getPolice());
+ 
     }
 
     @Override
