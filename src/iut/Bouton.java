@@ -18,7 +18,7 @@ public class Bouton extends Label {
      */
     public void dessiner(Ecran e) {
         e.traceRectangleArrondi(this.getX()-1, this.getY()-1,this.getLargeur()+2, this.getHauteur()+2, 0);       
-        e.traceRectangleArrondi(this.getX(), this.getY(),this.getLargeur(), this.getHauteur(), -16380); //2147483647 couleur blanc
+        e.traceRectangleArrondi(this.getX(), this.getY(),this.getLargeur(), this.getHauteur(), 6316128); 
 	e.traceTexte(this.getX(), this.getY(), this.getTexte(), this.getPolice());
  
     }
