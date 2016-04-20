@@ -21,10 +21,15 @@ public class Combo extends BoiteTexte {
         @Override
         /**
          * Dessine le combo : affiche la liste si elle est enroulée, trace un rectangle de saisie au dessus avec du texte et un symbole ▼
-         * @author
+         * @author ll809273
          */
 	public void dessiner(Ecran e) {
-            
+            BoiteTexte txt = new BoiteTexte (this,this.getX(), this.getY(), this.getLargeur(), this.getHauteur());
+            txt.dessiner(e);
+            e.traceTexte(this.getX(), this.getY(), "Saisir texte      ▼", this.getPolice());
+            if (!(this.enroulée)){
+                this.liste.dessiner(e);
+            }
 	}
 
         @Override
