@@ -24,7 +24,8 @@ public class Combo extends BoiteTexte {
          * @author ll809273
          */
 	public void dessiner(Ecran e) {
-            e.traceRectangle(this.getX(), this.getY(), this.getLargeur(), this.getHauteur(), 50000); //pour l'instant vert pour voir le cadre
+            BoiteTexte txt = new BoiteTexte (this,this.getX(), this.getY(), this.getLargeur(), this.getHauteur());
+            txt.dessiner(e);
             e.traceTexte(this.getX(), this.getY(), "Saisir texte      ▼", this.getPolice());
             if (!(this.enroulée)){
                 this.liste.dessiner(e);
