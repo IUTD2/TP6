@@ -21,7 +21,7 @@ public class Combo extends BoiteTexte {
         @Override
         /**
          * Dessine le combo : affiche la liste si elle est enroulée, trace un rectangle de saisie au dessus avec du texte et un symbole ▼
-         * @author ll809273
+         * @author Laëtitia LEMIERE
          */
 	public void dessiner(Ecran e) {
             BoiteTexte txt = new BoiteTexte (this,this.getX(), this.getY(), this.getLargeur(), this.getHauteur());
