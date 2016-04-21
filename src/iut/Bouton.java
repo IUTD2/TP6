@@ -14,7 +14,7 @@ public class Bouton extends Label {
     @Override
     /**
      * Dessine le bouton : rectangle arrondi gris à contour noir, texte
-     * @author ll809273
+     * @author Laëtitia LEMIERE
      */
     public void dessiner(Ecran e) {
         e.traceRectangleArrondi(this.getX()-1, this.getY()-1,this.getLargeur()+2, this.getHauteur()+2, 0);       
