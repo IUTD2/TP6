@@ -37,9 +37,20 @@ public class BoiteTexte extends Label {
          * Test du fonctionnement GIT/NETBEANS
          * @author Raphaël Pinto
          */
-        @Override
-        protected void clic()
-        {
-         hasFocus=true;    
+    @Override
+    protected void clic() {
+
+        Composant autreBoite;
+        Composant enfant;
+        ArrayList<Composant> liste = new ArrayList<>();
+        this.hasFocus = true;
+
+        autreBoite = this.getParent();
+        
+        for (int i = 1; i <= 10; i++) {
+            liste = autreBoite.getComposants();
         }
+        
+         
+    }
 }
