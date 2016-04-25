@@ -32,7 +32,6 @@ public class BoiteTexte extends Label {
         if (this.hasFocus) {
             e.traceTexte(this.getX(), this.getY(), "Texte", new Police("Arial", 12, 0x000000));
             
-
         }
         this.setVisible(true);
     }
