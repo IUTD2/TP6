@@ -40,11 +40,7 @@ public class BoiteTexte extends Label {
     protected String nomType() {
         return "boitetexte";
     }
-<<<<<<< HEAD
-
-=======
         
->>>>>>> b92ffcb59c244a4a285aaad3cee6244e4b23ecc9
         /**
          * Répond au clic : prend le focus et enlève le focus des autres boites texte du parent
          * Test du fonctionnement GIT/NETBEANS
