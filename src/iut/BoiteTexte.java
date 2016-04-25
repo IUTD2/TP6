@@ -40,15 +40,15 @@ public class BoiteTexte extends Label {
     protected String nomType() {
         return "boitetexte";
     }
-
-    /**
-     * Répond au clic : prend le focus et enlève le focus des autres boites
-     * texte du parent
-     *
-     * @author
-     */
-    @Override
-    protected void clic() {
-
-    }
+        
+        /**
+         * Répond au clic : prend le focus et enlève le focus des autres boites texte du parent
+         * Test du fonctionnement GIT/NETBEANS
+         * @author Raphaël Pinto
+         */
+        @Override
+        protected void clic()
+        {
+         hasFocus=true;    
+        }
 }
