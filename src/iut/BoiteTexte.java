@@ -22,26 +22,19 @@ public class BoiteTexte extends Label {
      * texte
      *
      * @param e l'écran
-     * @author
+     * @author Baptiste Prunot
      */
     @Override
     public void dessiner(Ecran e) {
-        Fenetre contourNoir = new Fenetre(e);
-        contourNoir.setArrièrePlan(0x000000);
-        Fenetre contenuBlanc = new Fenetre(e);
-        contenuBlanc.setArrièrePlan(0xFFFFFF);
-        contenuBlanc.setX(contourNoir.getX()-2);
-        contenuBlanc.setY(contourNoir.getY()-2);
-        contenuBlanc.setHauteur(contourNoir.getHauteur()-2);
-        contenuBlanc.setLargeur(contourNoir.getLargeur()-2);
-        contourNoir.ajouteComposant(contenuBlanc);
-        this.ajouteComposant(contourNoir);
+        e.traceRectangle(this.getX(), this.getY(), this.getLargeur()+2   ,this.getHauteur()+2, 0);
+        e.traceRectangle(this.getX()+1, this.getY()+1, this.getLargeur(), this.getHauteur(), 0xFFFFFF);
+        
         if (this.hasFocus) {
-            Label lab = new Label(contenuBlanc, contenuBlanc.getX(), contenuBlanc.getY(), contenuBlanc.getLargeur(), contenuBlanc.getHauteur());
-            lab.setTexte("texte");
-            contenuBlanc.ajouteComposant(lab);
+            e.traceTexte(this.getX(), this.getY(), "Texte", new Police("Arial", 12, 0x000000));
+            
 
         }
+        this.setVisible(true);
     }
 
     @Override
