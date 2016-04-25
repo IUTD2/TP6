@@ -17,7 +17,7 @@ public class BoutonRadio extends CaseCocher {
      */
     @Override
 	public void dessiner(Ecran e) {
-           
+        	e.traceCercle(this.getX(), this.getY(), this.getLargeur(), this.getHauteur());   
 	}
 
     @Override
