@@ -27,13 +27,20 @@ public class Fenetre extends Composant {
          * Dessine une fenêtre : trace un rectangle autour, dessine le titre
          * Dessine aussi ses enfants 
          * @param e 
-         * @author
+         * @author MAHMEDOV Armen
          */
         @Override
 	public void dessiner(Ecran e) {
-            
-            
+         
+            Composant[] tab = this.getComposants();
+                               
+            e.traceRectangle(this.getX(),this.getY(),this.getLargeur(),this.getHauteur(),this.arrièrePlan);
+            e.traceTexte(this.getX()+10,this.getY()+30, this.titre, this.police);
             super.dessiner(e);
+            for (int i=1; i<tab.length; i++){
+                tab[i].dessiner(e);
+            }
+
 	}
 
         @Override
