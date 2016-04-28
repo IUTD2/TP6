@@ -43,12 +43,13 @@ public class BoiteTexte extends Label {
         
         /**
          * Répond au clic : prend le focus et enlève le focus des autres boites texte du parent
-         * Test du fonctionnement GIT/NETBEANS
          * @author Raphaël Pinto
          */
         @Override
         protected void clic()
         {
-         hasFocus=true;    
+         this.hasFocus=true;   
+         
+         /* Si quelqu'un a une idée pour enlever le focus des autres boites textes du parent */
         }
 }
