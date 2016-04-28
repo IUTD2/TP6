@@ -13,7 +13,7 @@ public class BoutonRadio extends CaseCocher {
     /**
      * Dessine le bouton radio : texte du libellé, cercle à coté, plein si coché
      * @param e 
-     * @author
+     * @author Amaury Sauvage
      */
     @Override
 	public void dessiner(Ecran e) {
