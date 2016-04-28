@@ -38,20 +38,20 @@ public class Liste extends Composant {
 
 	/**
 	 * ajoute une chaine dans la liste
-     * @param s
-     * @author
+     	 * @param s
+     	 * @author Raphaël Pinto
 	 */
 	public void ajoute(String s) {
-		
+		chaines.add(s);		
 	}
 
 	/**
 	 * retire une chaîne de la liste
-         * @author
-     * @param s
+         * @author Raphaël Pinto
+     	 * @param s
 	 */
 	public void retire(String s) {
-		
+		chaines.remove(s);		
 	}
 
         /**
