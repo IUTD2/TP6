@@ -51,18 +51,19 @@ public class Combo extends BoiteTexte {
 	/**
 	 * ajoute une chaine dans la liste
          * @param s
-         * @author
+         * @author Raphaël Pinto
 	 */
 	public void ajoute(String s) {
-		
+        	liste.ajoute(s);				
 	}
 
 	/**
 	 * retire une chaîne de la liste
-         * @author
+	 * @param s
+         * @author Raphaël Pinto
 	 */
 	public void retire(String s) {
-		
+		liste.retire(s);				
 	}
         
         /**
