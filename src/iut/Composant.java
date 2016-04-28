@@ -81,10 +81,10 @@ public abstract class Composant {
         }
 	/**
 	 * ajoute un composant enfant au compmosant
-         * @author
+         * @author Raphaël Pinto
 	 */
 	protected void ajouteComposant(Composant c) {
-		
+            composants.add(c);		
 	}
 
         protected Composant getParent(){return parent;}
