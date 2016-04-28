@@ -70,10 +70,10 @@ public class Combo extends BoiteTexte {
          * Lit l'item précisé
          * @param i l'indice de l'item
          * @return la valeur de l'item
-         * @author
+         * @author Raphaël Pinto
          */
         public String getItem(int i)
         {
-            return "";
+            return liste.getItem(i);
         }
 }
