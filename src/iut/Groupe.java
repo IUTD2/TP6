@@ -50,5 +50,7 @@ public class Groupe extends Composant {
         {                        
             
             super.dessiner(e);
+            e.traceRectangleArrondi(this.getX(), this.getY(), this.getLargeur(), this.getHauteur(), 0xFFFFFF);
+            e.traceTexte(this.getX(),this.getY(), this.getTexte(),new Police("Arial",8,0));
         }
 }

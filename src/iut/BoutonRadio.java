@@ -1,13 +1,17 @@
 package iut;
 
+
+
 /**
  * un bouton radio est une sorte de case à cocher qui "décoche" les autres boutons radio du même parent (groupe ou fenêtre). 
  */
 public class BoutonRadio extends CaseCocher {
 
+      
     public BoutonRadio(Composant parent, int x, int y, int w, int h)
     {
         super(parent,x,y,w,h);
+       
     }
     
     /**
@@ -17,7 +21,10 @@ public class BoutonRadio extends CaseCocher {
      */
     @Override
 	public void dessiner(Ecran e) {
-        	e.traceCercle(this.getX(), this.getY(), this.getLargeur(), this.getHauteur());   
+                 e.traceCercle(this.getX(), this.getY(), 12,0);
+                 e.traceCercle(this.getX(), this.getY(), 10,0xFFFFFFF);
+                e.traceTexte(this.getX(), this.getY(), this.getTexte(), this.getPolice());
+                
 	}
 
     @Override
@@ -34,4 +41,6 @@ public class BoutonRadio extends CaseCocher {
         {
             
         }
+;
+        
 }
