@@ -34,10 +34,16 @@ public class CaseCocher extends Label {
      * texte
      *
      * @param e
-     * @author
+     * @author Baptiste
      */
     @Override
     public void dessiner(Ecran e) {
+        e.traceRectangle(this.getX()   , this.getY(), this.getLargeur(), this.getHauteur(), 0xFFFFFFFF);
+        
+        if(this.etat){
+            e.traceLigne(this.getLargeur() , this.getHauteur(), -this.getX(), -this.getY(), 0xFF0000);
+            //e.traceLigne(this.getLargeur(), this.getLargeur(), this.getX(), this.getY(), 0xFF0000);
+        }
 
     }
 
