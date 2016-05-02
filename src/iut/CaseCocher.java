@@ -38,12 +38,9 @@ public class CaseCocher extends Label {
      */
     @Override
     public void dessiner(Ecran e) {
-        e.traceRectangle(this.getX()   , this.getY(), this.getLargeur(), this.getHauteur(), 0xFFFFFFFF);
-        
-        if(this.etat){
-            e.traceLigne(this.getLargeur() , this.getHauteur(), -this.getX(), -this.getY(), 0xFF0000);
-            //e.traceLigne(this.getLargeur(), this.getLargeur(), this.getX(), this.getY(), 0xFF0000);
-        }
+        e.traceRectangle(this.getX(), this.getY(), this.getLargeur()   ,this.getHauteur(), 0xFF00FF);
+        this.setVisible(true);
+        //A continuer
 
     }
 
@@ -69,10 +66,8 @@ public class CaseCocher extends Label {
     }
 
     public boolean sikFunction() {
-        // return this.etat;
-        retrun 
-
-"REALLY awesome"
+        return this.etat;
+        
 	}
 
 }
