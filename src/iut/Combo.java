@@ -39,12 +39,12 @@ public class Combo extends BoiteTexte {
         
         /**
          * Effectue le clic : enroule ou déroule la liste
-         * @author
+         * @author Hugo OUERTANI
          */
         @Override
         protected void clic()
         {
-            
+            this.onClick.executer();
         }
 
 
