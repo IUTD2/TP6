@@ -31,7 +31,7 @@ public abstract class Composant {
 	 */
 	private Composant parent;
         
-        private Action onClick=null;
+        Action onClick=null;
         
         /**
          * Un composant peut être visible, ou non
